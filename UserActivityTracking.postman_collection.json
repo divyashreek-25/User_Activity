@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "8f482b26-d574-430d-b69c-88ffe588f9ed",
+		"name": "UserActivityTracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45849803",
+		"_collection_link": "https://divya-4077703.postman.co/workspace/Divya's-Workspace~eb5da5c7-882d-4851-84f9-0f36d230652c/collection/45849803-8f482b26-d574-430d-b69c-88ffe588f9ed?action=share&source=collection_link&creator=45849803"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 4f98445945972f2e3ad44f5e2006a42ef41c6219",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"action\": \"LOGIN\",\r\n  \"metadata\": {\r\n    \"ip\": \"192.168.0.1\",\r\n    \"device\": \"Chrome\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logs/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/logs/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 4f98445945972f2e3ad44f5e2006a42ef41c6219",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logs/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/logs/update/1/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 4f98445945972f2e3ad44f5e2006a42ef41c6219",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"IN_PROGRESS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logs/update/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logs",
+						"update",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
